@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive website using bootstrap </title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- one -->
+        <div class="row g-0">
+            <!-- Left: 3 Vertical Images -->
+            <div class="col-12 col-lg-3">
+                <div class="d-none d-lg-block mb-3">
+                    <img src="./images/Subtract.svg" class="img-fluid w-50" alt="Subtract">
+                </div>
+
+                <div class="d-none d-md-block d-lg-none mb-3">
+                    <img src="./images/Subtract.svg" class="img-fluid w-25" alt="Subtract">
+                </div>
+
+                <div class="d-flex flex-row flex-lg-column flex-wrap gap-2 justify-content-center">
+                    <div class="d-block d-md-none w-100 text-center mb-2">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-50" alt="Vertical 1">
+                    </div>
+                    <!-- d-md only -->
+                    <div class="d-none d-md-flex d-lg-none flex-row gap-2 justify-content-center w-100">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 1">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 2">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 3">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 4">
+                    </div>
+                    <!-- lg only-->
+                    <div class="d-none d-lg-flex flex-column gap-2 justify-content-center w-100">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-50" alt="Vertical 1">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-50" alt="Vertical 2">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-50" alt="Vertical 3">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-50" alt="Vertical 4">
+                    </div>
+                    <!-- sm only - 3 images -->
+                    <div class="d-block d-sm-flex d-md-none flex-row gap-2 justify-content-center w-100">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 1">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 2">
+                        <img src="./images/one.jpg" class="img-fluid rounded-circle w-25" alt="Vertical 3">
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Right: Text + 3 Horizontal Images -->
+            <div class="col-12 col-lg-9 mt-5">
+                <div class="row mb-4">
+                    <div class="col-12 mt-4">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quam minus error
+                            laborum mollitia iste sequi consequatur porro hic nemo, molestiae enim quia. Non saepe
+                            perspiciatis ipsa est delectus provident. Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Commodi quam minus error laborum mollitia iste sequi consequatur porro
+                            hic nemo, molestiae enim quia. Non saepe perspiciatis ipsa est delectus provident.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-3 mb-5">
+                    <div class="col-12 col-md-4">
+                        <img src="./images/one.jpg" class="img-fluid w-100 rounded" alt="Horizontal 1">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./images/one.jpg" class="img-fluid w-100 rounded" alt="Horizontal 2">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./images/one.jpg" class="img-fluid w-100 rounded" alt="Horizontal 3">
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <div class="card p-5" style="width: 100%; ">
+                            <i class="bi bi-apple-music m-auto  fs-1"></i>
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card p-5" style="width: 100%;">
+                            <i class="bi bi-apple-music m-auto  fs-1"></i>
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card p-5" style="width: 100%;">
+                            <i class="bi bi-apple-music m-auto  fs-1"></i>
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card’s content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border border-black border-2 opacity-75">
+
+                <div class="position-relative my-5">
+                    <!-- الخط -->
+                    <hr class="border border-black border-2 opacity-75 m-0">
+
+                    <!-- المثلث ملاصق للخط -->
+                    <div class="position-absolute start-50" style="top: 50%; transform: translate(-50%, -100%);">
+                        <div style="
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 30px solid black;
+    "></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- two -->
+        <div class="row">
+
+        </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
